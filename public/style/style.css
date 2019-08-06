@@ -1,0 +1,278 @@
+body{
+  margin:none !important;
+  padding: none !important;
+}
+
+/* Starting Of Global CSS */
+.themeText{
+  color:#D6100B;
+}
+
+.themeBackground{
+  background-color: #D6100B;
+}
+p{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.themeButton{
+  background-color: #D6100B !important;
+  margin-top:1rem;
+}
+/* Ending Of Global CSS */
+
+/* Navigation Styling */
+.menu{
+  padding-right: 1rem;
+}
+nav{
+  background-color: transparent;
+  box-shadow: none !important;
+}
+nav ul li{
+  position: relative;
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color:#D6100B;
+}
+nav ul li a{
+  transition: all 300ms ease-out;
+  font-size: 1.2rem;
+} 
+nav ul li a::before{
+  content:'';
+  transition: all 0.5s ease;
+  background-color:transparent;
+  position: absolute;
+  height: 0rem;
+  width:3px;
+  top:0px;
+  left:50%;
+}
+nav ul li a:hover::before{
+  content:'';
+  background-color:#D6100B;
+  height: 1.3rem;
+}
+.brand-logo{
+  margin-left: 1rem;
+  position: relative !important;
+}
+
+.brand-logo i{
+  font-size: 3rem !important;
+}
+.brand-logo span{
+  margin-right: 0.4rem;
+}
+
+@media (max-width:992px){
+  .brand-logo{
+    margin-left: 0px !important;
+    padding: 0px !important;
+    text-align: left !important;
+    position: relative !important;
+  }
+}
+/* Ending Of Navigation Styling */
+
+/* Starting Of Carousel */
+nav{
+  transition: all 300ms ease-out;
+}
+.slides{
+  height: 50rem !important;
+}
+.slider{
+  position: absolute !important;
+  top:0;
+  bottom:0;
+}
+.overlay{
+  position: absolute;   
+  height: 100%;
+  width: 100%;  
+  background:rgba(0, 0, 0, 0.5) !important;
+  top:0px;
+}
+
+.slider .indicators{
+  position: absolute;
+  bottom: 0rem;
+  z-index: 100;
+}
+
+.indicators .indicator-item{
+  border-radius: 0% !important;
+  height:10px !important;
+  width: 10px !important;
+}
+.indicators .active{
+  background-color: #D6100B !important;
+}
+
+.caption{
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  justify-content:center;
+  height: 70%;
+}
+.sliderHeader{
+  font-size: 3rem;
+  border-left: 10px solid #D6100B;
+  padding-left:10px !important;
+  padding-top: 10px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sliderHeaderContainer::before{
+  content:'';
+  position: absolute;
+  width:20rem;
+  height:10px;
+  background-color: #D6100B;
+}
+.sliderHeaderContainer::after{
+  content:'';
+  position: absolute;
+  width:10rem;
+  height:10px;
+  background-color: #D6100B;
+}
+.sliderText{
+  padding-left: 2rem !important;
+  margin-top:2rem;
+  width:60%;
+}
+@media (max-width:992px){
+  .sliderHeader{
+    font-size: 2rem;
+    border-left: 5px solid #D6100B;
+  }
+  .sliderHeaderContainer::before{
+    height:5px;
+  }
+  .sliderHeaderContainer::after{
+    height: 5px;
+  }
+  .sliderText{
+    width:100%;
+    padding-left: 0rem !important;
+  }
+}
+@media (max-width:601px){
+  .sliderHeader{
+    font-size: 1.2rem;
+    border-left: 5px solid #D6100B;
+  }
+  .sliderText{
+    width:100%;
+    padding-left: 0rem !important;
+  }
+}
+/* Ending Of Carousel */
+
+/* Staring Of Service Container */
+.ourCompanyContainer{
+  margin-top:50rem;
+  padding: 0rem 5rem;
+}
+.welcomeHeader{
+  font-size: 1.2rem;
+}
+.welcomeText{
+  font-size: 2.5rem;
+  color:#232E35;
+  margin: 1rem 0rem !important;
+}
+.welcomeCaption{
+  font-size: 1.2rem;
+  padding: 0rem 5rem !important;
+  color:#9DA9B0;
+  margin-bottom:2rem !important;
+}
+.serviceContainer{
+  border:1px solid #DAE0E2;
+  padding: 2rem !important;
+  border-radius: 0.2rem;
+  margin-bottom: 2rem;
+  display: block;
+  background: linear-gradient(to right, #D6100B 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .7s ease-out;
+}
+.serviceContainer:hover{
+  background-position: left bottom;
+}
+.serviceContainer:hover .serviceHeader,
+.serviceContainer:hover .serviceText,
+.serviceContainer:hover .serviceIcon
+{
+  color:#ffffff;
+}
+.serviceContainer:hover .serviceButtonContainer button{
+  background-color: #232E35 !important;
+}
+
+.serviceHeader{
+  font-size:1.3rem;
+  color:#232E35;
+  margin-bottom: 0.5rem !important;
+}
+
+.serviceText{
+  font-size:1.1rem;
+  width:90%;
+  margin-bottom:1rem !important;
+}
+.serviceIcon{
+  color:#535C68;
+}
+.serviceButtonContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.serviceButtonContainer span{
+  font-size:5rem;
+  color:#DAE0E2;
+}
+
+@media (max-width:992px){
+  .ourCompanyContainer{
+    padding: 1rem;
+  }
+  .welcomeText{
+    font-size: 1.5rem;
+  }
+  .welcomeCaption{
+    padding: 0 !important;
+  }
+}
+
+/* Ending Of Service Container */
+
+/* Starting Of Data Counter Container */
+.dataCounterContainer{
+  margin-top:5rem;
+  text-align: center;
+}
+.counterContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.counterTextContainer{
+  padding-left:1rem;
+  text-align: left;
+}
+.counterTextContainer p{
+  font-size: 1.4rem;
+}
+/* Ending of Data Counter Container */
