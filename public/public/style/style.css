@@ -839,8 +839,37 @@ nav{
 /* Start Of FAQ Page */
 .faqSection{
   margin-top:25rem;
+  padding:0rem 3rem !important;
 }
-.collapsible{
-  box-shadow: none;
+.faqHeader{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom:2rem !important;
+}
+.questionContainer{
+  margin-bottom: 2rem !important;
+}
+.questionContainer p:nth-child(1){
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem !important;
+}
+.questionContainer p:nth-child(2){
+  font-size: 1rem;
+  margin-bottom: 0.5rem !important;
+  color:#586776;
+}
+
+.questionContainer ul li{
+  list-style-type: initial;
+  color:#586776;
+}
+.questionContainer ul{
+  padding:1rem !important;
+  padding-top: 0rem !important;
+}
+@media (max-width:992px){
+  .faqSection{
+    padding:0rem 1rem !important;
+  }
 }
 /* End of FAQ Page */
