@@ -39,6 +39,10 @@ $(document).ready(function () {
   $('.collapsible').collapsible();
 });
 
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+});
+
 
 var elem = document.querySelector('.collapsible');
 var instance = M.Collapsible.init(elem, {

@@ -591,11 +591,43 @@ nav{
 
 /* Footer Started */
 .footerSection{
-  height: 4rem;
-  display: flex;
+  background-image: url('../images/bg-3.jpg');
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0,0.7);
+  background-size: cover !important;
+  color:#ffffff;
   justify-content: center;
+  padding:0rem 5rem;
+  border:1px solid transparent;
+}
+.footerDataContainer{
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  background-color: #232E35;
+  padding-top: 1rem !important;
+}
+.footerDataContainer i{
+  padding:1rem !important;
+}
+.footerSection .link{
+  color:#ffffff;
+  transition: all 0.3s ease;
+  display: block;
+  padding:0.5rem 0rem !important;
+  font-size:1rem;
+}
+.footerSection .link:hover{
+  color:#D6100B;
+  font-size:1rem !important;
+}
+
+@media (max-width:992px){
+  .footerSection{
+    padding:0rem 1rem;
+  }
+  .footerSection .center{
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 1rem;
+  }
 }
 /* Footer End */
 
