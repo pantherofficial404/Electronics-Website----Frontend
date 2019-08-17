@@ -829,6 +829,9 @@ nav{
   .priceCard{
     margin-bottom: 1rem;
   }
+  .serviceContent{
+    padding: 1rem;
+  }
 }
 /* Ending Of Services Page */
 /* Footer End */
