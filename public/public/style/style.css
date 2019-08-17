@@ -832,3 +832,13 @@ nav{
 }
 /* Ending Of Services Page */
 /* Footer End */
+
+
+/* Start Of FAQ Page */
+.faqSection{
+  margin-top:25rem;
+}
+.collapsible{
+  box-shadow: none;
+}
+/* End of FAQ Page */
