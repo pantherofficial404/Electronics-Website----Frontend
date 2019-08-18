@@ -14,10 +14,11 @@ $(window).scroll(function () {
 
 function myMap() {
   var mapProp = {
-    center: new google.maps.LatLng(51.508742, -0.120850),
-    zoom: 5,
+    center: new google.maps.LatLng(26.0876637, 87.2337224),
+    zoom: 18,
   };
   var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  var marker = new google.maps.Marker({ position: { lat: 26.0876637, lng: 87.2337224 }, map: map });
 }
 
 $(document).ready(function () {
