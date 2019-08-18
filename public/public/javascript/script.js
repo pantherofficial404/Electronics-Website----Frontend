@@ -45,6 +45,7 @@ $(document).ready(function () {
     edge: 'right',
     closeOnClick: true,
   });
+  $(".dropdown-button").dropdown();
 });
 
 

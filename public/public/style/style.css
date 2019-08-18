@@ -17,7 +17,6 @@ body{
 .themeText{
   color:#D6100B;
 }
-
 .themeBackground{
   background-color: #D6100B !important;
 }
@@ -69,10 +68,6 @@ nav ul li a:hover::before{
 .brand-logo{
   margin-left: 1rem;
   position: relative !important;
-}
-
-.brand-logo i{
-  font-size: 3rem !important;
 }
 .brand-logo span{
   margin-right: 0.4rem;
@@ -604,9 +599,11 @@ nav{
   flex-direction: row;
   align-items: center;
   padding-top: 1rem !important;
+  color:#ffffff !important;
 }
 .footerDataContainer i{
   padding:1rem !important;
+  padding-left:0rem !important;
 }
 .footerSection .link{
   color:#ffffff;
@@ -671,6 +668,7 @@ nav{
 }
 .contactInfoTextContainer p:nth-child(1){
   font-size: 1.3rem;
+  color:#D6100B;
 }
 .contactInfoTextContainer p:nth-child(2){
   color:#586C78;

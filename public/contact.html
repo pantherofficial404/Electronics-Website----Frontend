@@ -5,21 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Electronic Site</title>
+  <title>Dey Auto Electric</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="public/style/style.css">
+  <link rel="shortcut icon" href="./public/images/favicon.png" type="image/x-icon" />
+
 </head>
 
 <body>
   <div id="loading"></div>
   <!-- Navigation Menu -->
-
   <div>
-    <div class="navbar-fixed">
-      <nav id="nav">
-        <a href="index.html" class="brand-logo"><i class="material-icons">directions_car</i><span
-            class="themeText">Car</span> Services</a>
+    <ul class="dropdown-content" id="comp-menu3">
+      <li><a href="#">Sub-Menu1</a></li>
+      <li><a href="#">Sub-Menu2</a></li>
+      <li><a href="#">Sub-Menu3</a></li>
+    </ul>
+    <nav id="nav">
+      <div class="navbar-fixed">
+
+        <a href="index.html" class="brand-logo"><img src="./public/images/logo.png" alt="logo" height="50px"
+            width="70px" /><span class="themeText">Auto</span> Electric</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
           <li><a href="products.html">Products</a></li>
@@ -30,93 +37,95 @@
         <a href="#" class="sidenav-trigger right" data-target="mobile-links">
           <i class="material-icons">menu</i>
         </a>
-      </nav>
-    </div>
-    <ul class="sidenav" id="mobile-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html" class="red-text">Contact</a></li>
-    </ul>
-    <!-- Ending Of Navigation Menu -->
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html" class="red-text">Contact</a></li>
+  </ul>
+  <!-- Ending Of Navigation Menu -->
 
-    <!-- Starting Of Carousel -->
-    <div class="slider headerContainer">
-      <p>CONTACT US</p>
-    </div>
-    <!-- Ending OF Carousel -->
+  <!-- Starting Of Carousel -->
+  <div class="slider headerContainer">
+    <p>CONTACT US</p>
+  </div>
+  <!-- Ending OF Carousel -->
 
-    <!-- Contact Us Form -->
-    <div class="row contactForm">
+  <!-- Contact Us Form -->
+  <div class="row contactForm">
+    <div class="col s12 m4">
+      <p class="contactHeader">CONTACT INFO</p>
+      <div class="contactInfoContainer">
+        <i class="red-text material-icons">call</i>
+        <a class="contactInfoTextContainer" href="tel:+919570518195">
+          <p>PHONE NUMBER</p>
+          <p>(+91) 95705 18195</p>
+        </a>
+      </div>
+      <div class="contactInfoContainer">
+        <i class="red-text material-icons">email</i>
+        <a class="contactInfoTextContainer" href="mailto:Sales@deyautoelectric.com">
+          <p>EMAIL ADDRESS</p>
+          <p>Sales@deyautoelectric.com</p>
+        </a>
+      </div>
+      <div class="contactInfoContainer">
+        <i class="red-text material-icons">location_on</i>
+        <a class="contactInfoTextContainer"
+          href="https://www.google.com/maps/place/DEY+AUTO+ELECTRIC/@26.0875841,87.2332563,18z/data=!3m1!4b1!4m5!3m4!1s0x39ef95ed212b44a7:0xe9ac006f75f42898!8m2!3d26.0875817!4d87.2343506">
+          <p>ADDRESS INFO</p>
+          <p>DEY AUTO ELECTRIC , SH-77 , Raniganj , Near PNB Bank , Bihar-854334</p>
+        </a>
+      </div>
+    </div>
+    <div class="col s12 m7">
+      <p class="contactHeader">GET IN TOUCH</p>
+      <form action="#">
+        <input type="text" placeholder="Name" class="input">
+        <input type="text" placeholder="Email" class="input">
+        <input type="text" placeholder="Message" class="input">
+        <a href="#" class="contactButton">Submit</a>
+      </form>
+    </div>
+  </div>
+  <div id="googleMap" class="mapContainer"></div>
+  <!-- Ending Of Contact Us Form -->
+
+  <!-- Footer Section Start -->
+
+  <div class="footerSection">
+    <div class="row">
       <div class="col s12 m4">
-        <p class="contactHeader">CONTACT INFO</p>
-        <div class="contactInfoContainer">
-          <i class="red-text material-icons">call</i>
-          <div class="contactInfoTextContainer">
-            <p>PHONE NUMBER</p>
-            <p>(+91) 95705 18195</p>
-          </div>
-        </div>
-        <div class="contactInfoContainer">
-          <i class="red-text material-icons">email</i>
-          <div class="contactInfoTextContainer">
-            <p>EMAIL ADDRESS</p>
-            <p>Sales@deyautoelectric.com</p>
-          </div>
-        </div>
-        <div class="contactInfoContainer">
-          <i class="red-text material-icons">location_on</i>
-          <div class="contactInfoTextContainer">
-            <p>ADDRESS INFO</p>
-            <p>DEY AUTO ELECTRIC , SH-77 , Raniganj , Near PNB Bank , Bihar-854334</p>
-          </div>
-        </div>
+        <h6>GET IN TOUCH</h6>
+        <a class="footerDataContainer"
+          href="https://www.google.com/maps/place/DEY+AUTO+ELECTRIC/@26.0875841,87.2332563,18z/data=!3m1!4b1!4m5!3m4!1s0x39ef95ed212b44a7:0xe9ac006f75f42898!8m2!3d26.0875817!4d87.2343506">
+          <i class="material-icons themeText">location_on</i>
+          <p>DEY AUTO ELECTRIC , SH-77 , Raniganj , Near PNB Bank , Bihar-854334</p>
+        </a>
+        <a class="footerDataContainer" href="mailto:Sales@deyautoelectric.com">
+          <i class="material-icons themeText">email</i>
+          <p>Sales@deyautoelectric.com</p>
+        </a>
+        <a class="footerDataContainer" href="tel:+919570518195">
+          <i class="material-icons themeText">call</i>
+          <p>(+91) 95705 18195</p>
+        </a>
       </div>
-      <div class="col s12 m7">
-        <p class="contactHeader">GET IN TOUCH</p>
-        <form action="#">
-          <input type="text" placeholder="Name" class="input">
-          <input type="text" placeholder="Email" class="input">
-          <input type="text" placeholder="Message" class="input">
-          <a href="#" class="contactButton">Submit</a>
-        </form>
+      <div class="col s12 offset-m3 m3">
+        <h6>LINKS</h6>
+        <a href="index.html" class="link">Home</a>
+        <a href="products.html" class="link">Products</a>
+        <a href="services.html" class="link">Services</a>
+        <a href="about.html" class="link">About Us</a>
+        <a href="contact.html" class="link">Contact Us</a>
+        <a href="faq.html" class="link">FAQ</a>
       </div>
     </div>
-    <div id="googleMap" class="mapContainer"></div>
-    <!-- Ending Of Contact Us Form -->
-
-    <!-- Footer Section Start -->
-
-    <div class="footerSection">
-      <div class="row">
-        <div class="col s12 m4">
-          <h6 class="center">GET IN TOUCH</h6>
-          <div class="footerDataContainer">
-            <i class="material-icons themeText">location_on</i>
-            <p>DEY AUTO ELECTRIC , SH-77 , Raniganj , Near PNB Bank , Bihar-854334</p>
-          </div>
-          <div class="footerDataContainer">
-            <i class="material-icons themeText">email</i>
-            <p>Sales@deyautoelectric.com</p>
-          </div>
-          <div class="footerDataContainer">
-            <i class="material-icons themeText">call</i>
-            <p>(+91) 95705 18195</p>
-          </div>
-        </div>
-        <div class="col s12 offset-m3 m3">
-          <h6 class="center">LINKS</h6>
-          <a href="index.html" class="link">Home</a>
-          <a href="products.html" class="link">Products</a>
-          <a href="services.html" class="link">Services</a>
-          <a href="about.html" class="link">About Us</a>
-          <a href="contact.html" class="link">Contact Us</a>
-          <a href="faq.html" class="link">FAQ</a>
-        </div>
-      </div>
-    </div>
-    <!-- Footer Section End -->
+  </div>
+  <!-- Footer Section End -->
   </div>
 
 
