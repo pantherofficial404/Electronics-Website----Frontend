@@ -1,6 +1,6 @@
 {
-  "short_name": "Dey Auto Electric",
-  "name": "Dey Auto Electric",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "Icon-32.png",
@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
