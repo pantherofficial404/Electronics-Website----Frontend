@@ -19,6 +19,8 @@ function myMap() {
   };
   var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
   var marker = new google.maps.Marker({ position: { lat: 26.0876637, lng: 87.2337224 }, map: map });
+
+
 }
 
 $(document).ready(function () {
@@ -30,9 +32,10 @@ $(document).ready(function () {
   jQuery('#loading').fadeOut(100);
   var scroll = $(window).scrollTop();
   if (scroll > 150) {
-    $('#nav').css("background", "#232E35")
+    $('#nav').css("background", "#232E35");
+
   } else {
-    $('#nav').css("background", "transparent")
+    $('#nav').css("background", "transparent");
   }
 });
 
@@ -45,12 +48,41 @@ $(document).ready(function () {
     edge: 'right',
     closeOnClick: true,
   });
-  $(".dropdown-button").dropdown();
-});
+  $('.sidenav .closable').click(() => {
+    $('.sidenav').sidenav('close');
+  })
 
+  $(".product-sidenav-dropdown-trigger").dropdown({
+    coverTrigger: false,
+    hover: true,
+    closeOnClick: true,
+    constrainWidth: true,
+  });
+
+  $(".product-dropdown-trigger").dropdown({
+    coverTrigger: false,
+    hover: true,
+    closeOnClick: true,
+    constrainWidth: true
+  });
+
+  $(".services-dropdown-trigger").dropdown({
+    coverTrigger: false,
+    hover: true,
+    closeOnClick: true,
+    constrainWidth: true
+  });
+
+  $(".services-sidenav-dropdown-trigger").dropdown({
+    coverTrigger: false,
+    hover: true,
+    closeOnClick: true,
+    constrainWidth: true
+  });
+
+});
 
 var elem = document.querySelector('.collapsible');
 var instance = M.Collapsible.init(elem, {
   accordion: true
 });
-instance.open(0)

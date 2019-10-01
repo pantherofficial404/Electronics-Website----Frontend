@@ -2,383 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Electronic Site</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/Icon-32.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="Icon.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assests/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="public/style/style.css">
+  <title>Dey Auto Electric</title>
+  <style>
+    #loading {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #fff url('images/loader.gif');
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 9999;
+      background-size: 5rem 5rem;
+    }
+  </style>
 </head>
 
 <body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="loading"></div>
-  <!-- Navigation Menu -->
-
-  <div>
-    <div class="navbar-fixed">
-      <nav id="nav">
-        <a href="index.html" class="brand-logo"><i class="material-icons">directions_car</i><span
-            class="themeText">Car</span> Services</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="index.html" class="red-text">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="#" class="sidenav-trigger right" data-target="mobile-links">
-          <i class="material-icons">menu</i>
-        </a>
-      </nav>
-    </div>
-    <ul class="sidenav" id="mobile-links">
-      <li><a href="index.html" class="red-text">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <!-- Ending Of Navigation Menu -->
-
-    <!-- Starting Of Carousel -->
-    <div class="slider">
-      <ul class="slides">
-        <li class="sliderContainer">
-          <div class="overlay"></div>
-          <img src="public/images/slide1.jpg" class="responsive-img">
-          <div class="caption left-align">
-            <div class="sliderHeaderContainer">
-              <p class="sliderHeader">SATISFACTION GUARANTEED</p>
-              <p class="sliderHeader">OR YOUR DENT BACK</p>
-            </div>
-            <div class="sliderText">
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                suffered alteration in some form, by injected humour, or randomised words.</p>
-              <button class="white-text btn waves-effect themeButton">Read more</button>
-            </div>
-          </div>
-        </li>
-        <li class="sliderContainer">
-          <div class="overlay"></div>
-          <img src="public/images/slide2.jpg" class="responsive-img">
-          <div class="caption left-align">
-            <div class="sliderHeaderContainer">
-              <p class="sliderHeader">SATISFACTION GUARANTEED</p>
-              <p class="sliderHeader">OR YOUR DENT BACK</p>
-            </div>
-            <div class="sliderText">
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                suffered alteration in some form, by injected humour, or randomised words.</p>
-              <button class="white-text btn waves-effect themeButton">Read more</button>
-            </div>
-          </div>
-        </li>
-        <li class="sliderContainer">
-          <div class="overlay"></div>
-          <img src="public/images/slide3.jpg" class="responsive-img">
-          <div class="caption left-align">
-            <div class="sliderHeaderContainer">
-              <p class="sliderHeader">SATISFACTION GUARANTEED</p>
-              <p class="sliderHeader">OR YOUR DENT BACK</p>
-            </div>
-            <div class="sliderText">
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                suffered alteration in some form, by injected humour, or randomised words.</p>
-              <button class="white-text btn waves-effect themeButton">Read more</button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Starting Of Our Company -->
-  <div class="ourCompanyContainer">
-    <p class="themeText center welcomeHeader">WELCOME CARSERVX</p>
-    <p class="center welcomeText">WE'RE A COMPANY OF TALENTED ENGINEERS & MECHANICS</p>
-    <p class="center welcomeCaption">There are many variations of passages of Lorem Ipsum available, but the majority
-      have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-      believable.</p>
-    <div class="row">
-      <div class="col s12 m6 l4">
-        <div class="serviceContainer">
-          <p class="serviceHeader">INTERNATIONAL STANDARDS</p>
-          <p class="serviceText">It is a long established fact that a reader will be distracted by the readable
-            contentof a page.</p>
-          <p><i class="large material-icons serviceIcon">chat_bubble_outline</i></p>
-          <div class="serviceButtonContainer">
-            <button class="btn red themeButton waves-effect">Read More</button>
-            <span>01</span>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m6 l4">
-        <div class="serviceContainer">
-          <p class="serviceHeader">INTERNATIONAL STANDARDS</p>
-          <p class="serviceText">It is a long established fact that a reader will be distracted by the readable
-            contentof a page.</p>
-          <p><i class="large material-icons serviceIcon">card_travel</i></p>
-          <div class="serviceButtonContainer">
-            <button class="btn red themeButton waves-effect">Read More</button>
-            <span>02</span>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m12 l4">
-        <div class="serviceContainer">
-          <p class="serviceHeader">INTERNATIONAL STANDARDS</p>
-          <p class="serviceText">It is a long established fact that a reader will be distracted by the readable
-            contentof a page.</p>
-          <p><i class="large material-icons serviceIcon">code</i></p>
-          <div class="serviceButtonContainer">
-            <button class="btn red themeButton waves-effect">Read More</button>
-            <span>03</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Ending Of Our Company -->
-
-  <!-- Starting Of Data Counters -->
-  <div class="row dataCounterContainer">
-    <div class="layer"></div>
-    <div class="col s12 m4 ">
-      <div class="counterContainer">
-        <i class="medium themeText material-icons">settings</i>
-        <div class="counterTextContainer">
-          <p class="counter">0</p>
-          <p>Car Painted</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m4 ">
-      <div class="counterContainer">
-        <i class="medium themeText material-icons">settings</i>
-        <div class="counterTextContainer">
-          <p class="counter">0</p>
-          <p>Car Painted</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m4 ">
-      <div class="counterContainer">
-        <i class="medium themeText material-icons">settings</i>
-        <div class="counterTextContainer">
-          <p class="counter">0</p>
-          <p>Car Painted</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Ending of Data Counters -->
-
-  <!-- ourServiceContainer -->
-  <div class="ourServiceContainer">
-    <div class="ourServiceTextContainer">
-      <p class="ourServiceHeader">
-        OUR SERVICES
-      </p>
-      <p class="ourServiceCaption">WE PROVIDE PROFESSIONAL SERVICES</p>
-      <p class="ourServiceContext">There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in
-        some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-    </div>
-    <div class="ourServicesCardContainer">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="public/images/pic2.jpg">
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
-                require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <button class="white-text btn waves-effect themeButton">Read More</button>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="public/images/pic6.jpg">
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
-                require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <button class="white-text btn waves-effect themeButton">Read More</button>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="public/images/pic11.jpg">
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
-                require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <button class="white-text btn waves-effect themeButton">Read More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ourServiceContainer Ending -->
-
-  <!-- WHY CHOOSE SECTION START -->
-  <div class="row whyChooseContainer">
-    <div class="col s12 m6 l6 whyChooseTextContainer">
-      <p class="whyChooseHeader themeText">WHY CHOOSE US</p>
-      <p class="whyChooseCaption">WHY PEOPLE CHOOSE US</p>
-      <div class="whyChooseLabelContainer">
-        <div>
-          <p class="captionIndex">1</p>
-        </div>
-        <div>
-          <p class="captionText">To facilitate even energy distribution so your vehicle's battery is properly charged.
-          </p>
-        </div>
-      </div>
-      <div class="whyChooseLabelContainer">
-        <div>
-          <p class="captionIndex">2</p>
-        </div>
-        <div>
-          <p class="captionText">Avoid breaking down in your vehicle by maintaining its belts and hoses.
-          </p>
-        </div>
-      </div>
-      <div class="whyChooseLabelContainer">
-        <div>
-          <p class="captionIndex">3</p>
-        </div>
-        <div>
-          <p class="captionText">Failing an emissions test is usually the fault of either the muffler or the exhaust
-            system.
-          </p>
-        </div>
-      </div>
-      <div class="whyChooseLabelContainer">
-        <div>
-          <p class="captionIndex">4</p>
-        </div>
-        <div>
-          <p class="captionText">The performance of the engine, alternator, and secondary electrical systems depend on
-            the battery.
-          </p>
-        </div>
-      </div>
-      <div class="whyChooseLabelContainer">
-        <div>
-          <p class="captionIndex">5</p>
-        </div>
-        <div>
-          <p class="captionText">The performance of the engine, alternator, and secondary electrical systems depend on
-            the battery.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6 l6 whyChooseImageContainer">
-      <div class="whyChooseImage">
-      </div>
-      <div class="whyChooseContact">
-        <p class="chooseContactHeader">WANT TO TALK?</p>
-        <p class="chooceContactNumber">CALL:(123) 556 4321</p>
-        <p class="white-text">Need a special repair service? we are happy to fulfil every request in order to exceed
-          your expectations</p>
-      </div>
-    </div>
-  </div>
-  <!-- WHY CHOOSE SECTION END -->
-  <!-- FAQ's  SECTION START -->
-  <div class="row faqSection">
-    <div class="col s12 m6 l6 faqSectionLeft">
-      <div class="trustedText">
-        <p class="white-text">We Provide</p>
-        <p class="white-text">TRUSTED<br>SERVICES<br>FOR YOU</p>
-      </div>
-      <div class="trustedImage">
-        <img src="public/images/new.png" alt="">
-      </div>
-    </div>
-    <div class="col s12 m6 l6 faqSectionRight">
-      <p class="faqRightHeader">WHAT WE DO</p>
-      <p>SATISFACTION</p>
-      <p>GUARANTEED OR YOUR</p>
-      <p>DENT BACK.</p>
-      <ul class="collapsible">
-        <li>
-          <div class="collapsible-header">When Should i Replace My Fuel Filter?</div>
-          <div class="collapsible-body">There are many variations of passages of Lorem Ipsum available, but the majority
-            have suffered alteration in some form, by injected humour, or randomised words which don't look even
-            slightly believabl</div>
-        </li>
-        <li>
-          <div class="collapsible-header">Must i get Air Conditioning Serviced? </div>
-          <div class="collapsible-body">Graphic design lorem Ipsum is simply dummy text of the printing and type setting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer
-            took.</div>
-        </li>
-        <li>
-          <div class="collapsible-header">How Long it Take To Repair My Vehicle?</div>
-          <div class="collapsible-body">Developement lorem Ipsum is simply dummy text of the printing and type has been
-            the industry's standard dummy text ever since the when an unknown printer took a galley of type and
-            scrambled it to make.</div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- FAQ's  SECTION END -->
-
-  <!-- Footer Section Start -->
-
-  <div class="footerSection">
-    <div class="row">
-      <div class="col s12 m4">
-        <h6 class="center">GET IN TOUCH</h6>
-        <div class="footerDataContainer">
-          <i class="material-icons themeText">location_on</i>
-          <p>92 Princess Road, parkvenue,Greater London, NW18JR, United Kingdom</p>
-        </div>
-        <div class="footerDataContainer">
-          <i class="material-icons themeText">email</i>
-          <p>carservxdemo@gmail.com</p>
-        </div>
-        <div class="footerDataContainer">
-          <i class="material-icons themeText">call</i>
-          <p>(+0091) 912-3456-073</p>
-        </div>
-      </div>
-      <div class="col s12 offset-m3 m3">
-        <h6 class="center">LINKS</h6>
-        <a href="index.html" class="link">Home</a>
-        <a href="products.html" class="link">Products</a>
-        <a href="services.html" class="link">Services</a>
-        <a href="about.html" class="link">About Us</a>
-        <a href="contact.html" class="link">Contact Us</a>
-        <a href="faq.html" class="link">FAQ</a>
-      </div>
-    </div>
-  </div>
-  <!-- Footer Section End -->
-  </div>
-
+  <div id="root"></div>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script src="public/javascript/script.js"></script>
+  <script src="/assests/javascript/script.js"></script>
 </body>
 
 </html>

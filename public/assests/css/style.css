@@ -3,19 +3,12 @@ body{
   padding: none !important;
   background-color: #F6F6F6;
 }
-#loading {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: #fff url('/public/images/loader.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 9999;
-  background-size: 5rem 5rem;
-}
 /* Starting Of Global CSS */
 .themeText{
   color:#D6100B;
+}
+.transparent{
+  box-shadow: none !important;
 }
 .themeBackground{
   background-color: #D6100B !important;
@@ -32,6 +25,24 @@ p{
 /* Ending Of Global CSS */
 
 /* Navigation Styling */
+.product-dropdown-trigger {
+  border:none !important;
+  box-shadow: none !important;
+}
+.navbarTextIndent{
+  text-indent: 2rem;
+}
+.navbarMarginNone{
+  margin:0rem;
+}
+.navbarMarginRight{
+  margin-right: 0rem;
+}
+
+.collapsibleNavbar{
+  text-align: left;
+  margin-left: 1.2rem;
+}
 .menu{
   padding-right: 1rem;
 }
@@ -40,16 +51,18 @@ nav{
   box-shadow: none !important;
 }
 nav ul li{
+  width: 8.8rem;
+  text-align: center;
+  margin: 0rem;
+  padding: 0rem;
   position: relative;
 }
-nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
-  color:#D6100B;
-}
+
 nav ul li a{
   transition: all 300ms ease-out;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 } 
+
 nav ul li a::before{
   content:'';
   transition: all 0.5s ease;
@@ -65,6 +78,7 @@ nav ul li a:hover::before{
   background-color:#D6100B;
   height: 1.3rem;
 }
+
 .brand-logo{
   margin-left: 1rem;
   position: relative !important;
@@ -81,6 +95,65 @@ nav ul li a:hover::before{
     position: relative !important;
   }
 }
+
+/*Starting of DropDown*/
+.dropdown-content {
+  min-width: 12rem;
+  max-height: auto;
+  scroll-behavior: smooth;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color:white;
+  background-color: #232E35;
+}
+
+.dropdown-content li a:hover, .dropdown-content li a.active {
+  color: #D6100B;
+ 
+}
+.dropdown-content li a:hover::before{
+  content: '';
+  height: 0rem;
+}
+
+/*Ending of DropDown*/
+
+/*Starting of Collapsible & SideNav*/
+.sidenav.dark {
+  background-color: #232E35;
+  color: rgba(255, 255, 255, 0.5);
+}
+.sidenav.dark .subheader {
+  color: rgba(255, 255, 255, 0.8);
+}
+.sidenav.dark .divider {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.sidenav.dark li a {
+  color: white;
+}
+
+.sidenav.dark li a i.material-icons {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidenav.dark li ul li .collapsible-body ul li a {
+  background-color: #232E35;
+  color: white;
+  text-indent: 2rem;
+}
+
+.sidenav.dark li ul li .collapsible-body ul li a:hover{
+  background-color: white;
+  color: #D6100B;
+}
+
+.sidenav.dark li ul li .collapsible-body ul li a:active{
+  color: #D6100B;
+}
+/*Ending of Collapsible*/
+
 /* Ending Of Navigation Styling */
 
 /* Starting Of Carousel */
@@ -260,12 +333,13 @@ nav{
   }
 }
 
+=
 /* Ending Of Service Container */
 
 /* Starting Of Data Counter Container */
 .dataCounterContainer{
   height:20rem;
-  background-image: url('../images/slide1.jpg');
+  background-image: url('/assests/images/slide1.jpg');
   position: relative;
   background-attachment: fixed;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
@@ -290,7 +364,7 @@ nav{
 @media (max-width:602px){
   .dataCounterContainer{
     height:20rem;
-    background-image: url('../images/slide1.jpg');
+    background-image: url('/assests/images/slide1.jpg');
     position: relative;
     background-attachment: fixed;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
@@ -314,7 +388,7 @@ nav{
 /* Starting Of Service Container */
 .ourServiceTextContainer{
   height:30rem;
-  background-image: url('../images/bg-map.png');
+  background-image: url('/assests/images/bg-map.png');
   box-shadow: inset 0 0 0 1000px rgba(35, 46, 53,0.9);
   padding: 3rem;
   text-align: center;
@@ -399,7 +473,7 @@ nav{
 .whyChooseTextContainer{
   height:38rem;
   position: relative;
-  background-image: url('../images/pic-c-1bg.png');
+  background-image: url('/assests/images/pic-c-1bg.png');
   padding: 2rem 0rem 0rem 5rem !important;
   display: flex;
   justify-content: center;
@@ -443,7 +517,7 @@ nav{
   padding-right: 0.5rem !important;
 }
 .whyChooseImage{
-  background-image: url("../images/video-pic.png");
+  background-image: url("/assests/images/video-pic.png");
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0,0.5);
   height:18rem;
   background-size: cover;
@@ -586,7 +660,7 @@ nav{
 
 /* Footer Started */
 .footerSection{
-  background-image: url('../images/bg-3.jpg');
+  background-image: url('/assests/images/bg-3.jpg');
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0,0.7);
   background-size: cover !important;
   color:#ffffff;
@@ -632,7 +706,7 @@ nav{
   position: absolute !important;
   top:0;
   bottom:0;
-  background-image: url('../images/4.jpg');
+  background-image: url('/assests/images/4.jpg');
   background-attachment: fixed;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0,0.7);
@@ -640,7 +714,7 @@ nav{
 }
 
 .aboutHeader{
-  background-image: url('../images/1.jpg') !important;
+  background-image: url('/assests/images/1.jpg') !important;
 }
 .headerContainer p{
   position: absolute;
@@ -788,7 +862,7 @@ nav{
 
 /* Services Page */
 .serviceContent{
-  background-image: url('../images/bg-map.png');
+  background-image: url('/assests/images/bg-map.png');
   box-shadow: inset 0 0 0 1000px rgba(35, 46, 53,0.9);
   padding: 3rem;
   text-align: center;
